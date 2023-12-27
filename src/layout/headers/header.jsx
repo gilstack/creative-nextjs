@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import useSticky from '../../hooks/use-sticky';
-import Sidebar from '../../components/common/off-canvas';
-import NavMenus from './nav-menus';
-import MobileMenu from './mobile-menu';
+import React from "react";
+import Link from "next/link";
+import useSticky from "../../hooks/use-sticky";
+import Sidebar from "../../components/common/off-canvas";
+import NavMenus from "./nav-menus";
+import MobileMenu from "./mobile-menu";
 
 const Header = () => {
   const { headerSticky } = useSticky();
@@ -11,18 +11,23 @@ const Header = () => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area header-transparent pl-165 pr-165 pt-35 
-        ${headerSticky ? 'header-sticky' : ''}`}>
+        <div
+          id="header-sticky"
+          className={`tp-header-area header-transparent pl-165 pr-165 pt-20 
+        ${headerSticky ? "header-sticky" : ""}`}
+        >
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-logo">
                   <Link href="/">
-                    <a><img src="/assets/img/logo/logo-blue.png" alt="" /></a>
+                    <a>
+                      <img src="/assets/img/logo/logo-blue.png" alt="" />
+                    </a>
                   </Link>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-7">
+              <div className="col-xl-6 col-lg-6 d-flex justify-content-center">
                 <div className="tp-main-menu">
                   <nav id="mobile-menu">
                     {/* nav menus start */}
@@ -31,9 +36,13 @@ const Header = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2">
-                <div className="tp-menu-bar text-end" onClick={() => setSidebarOpen(true)}>
-                  <button><i className="fal fa-bars"></i></button>
+              <div className="col-xxl-3 col-xl-3 col-lg-3">
+                <div className="tp-header-left d-flex align-items-center justify-content-end">
+                  <div className="tp-header-yellow-button tp-yellow-space">
+                    <Link href="/contact">
+                      <a className="tp-btn-black">Duvidas ? 👋</a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -44,10 +53,6 @@ const Header = () => {
       {/* <!-- mobile-menu-area --> */}
       <MobileMenu logo={"logo.png"} />
       {/* <!-- mobile-menu-area-end --> */}
-
-      {/* off canvas start */}
-      <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
-      {/* off canvas end */}
     </React.Fragment>
   );
 };
