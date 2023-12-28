@@ -18,7 +18,7 @@ const Header = () => {
         >
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-xl-3 col-lg-3">
+              <div className="col-xl-2 col-lg-2">
                 <div className="tp-logo">
                   <Link href="/">
                     <a>
@@ -27,7 +27,7 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-xl-6 col-lg-6 d-flex justify-content-center">
+              <div className="col-xl-7 col-lg-7 d-flex justify-content-center">
                 <div className="tp-main-menu">
                   <nav id="mobile-menu">
                     {/* nav menus start */}

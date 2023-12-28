@@ -3,6 +3,7 @@ import React from "react";
 import { HighlightTwo } from "../../../svg";
 
 const hero_contents = {
+  shapes: [{ img: "hero-shape-4" }, { num: "-two", img: "hero-shape-4.1" }],
   title: (
     <>
       Cresça a sua{" "}
@@ -10,7 +11,7 @@ const hero_contents = {
         {" "}
         <HighlightTwo /> <i>Presença</i>
       </span>{" "}
-      digital
+      Digital
     </>
   ),
   text: (
@@ -31,16 +32,16 @@ const hero_contents = {
       link: "http://facebook.com",
     },
     {
+      id: 2,
+      icon: "fab fa-twitter social-icon-2",
+      title: "Instagram",
+      link: "http://instagram.com",
+    },
+    {
       id: 3,
       icon: "fab fa-youtube social-icon-3",
       title: "Youtube",
       link: "https://www.youtube.com/",
-    },
-    {
-      id: 2,
-      icon: "fab fa-instagram social-icon-2",
-      title: "Instagram",
-      link: "http://instagram.com",
     },
     {
       id: 4,
@@ -86,7 +87,7 @@ const HeroArea = () => {
                     {text}
                   </p>
                   <div
-                    className="tp-hero-button mb-40 wow tpfadeUp"
+                    className="tp-hero-button mb-120 wow tpfadeUp"
                     data-wow-duration=".7s"
                     data-wow-delay="1s"
                   >
@@ -101,7 +102,7 @@ const HeroArea = () => {
                     </Link>
                   </div>
                   <div
-                    className="tp-hero-social pb-30 wow tpfadeIn"
+                    className="tp-hero-social pb-10 wow tpfadeIn"
                     data-wow-duration=".7s"
                     data-wow-delay="1.2s"
                   >

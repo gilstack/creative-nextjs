@@ -5,8 +5,8 @@
 @use "../utils" as *;
 
 .tp-hero-space {
-  padding-top: 160px;
-  padding-bottom: 65px;
+  padding-top: 220px;
+  padding-bottom: 70px;
 }
 
 .shape-circle-yellow {
@@ -304,10 +304,9 @@
 
   & img {
     transform: translateX(45px);
-    width: 125%;
 
     @media #{$xxl} {
-      /* transform: translateX(-70px); */
+      transform: translateX(-70px);
     }
 
     @media #{$xl} {
