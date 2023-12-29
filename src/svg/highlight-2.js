@@ -1,9 +1,9 @@
 import React from "react";
 
 const HighlightTwo = ({
-  width = "266",
+  width = "300",
   height = "12",
-  viewBox = "0 0 266 12",
+  viewBox = "0 0 300 12",
 }) => {
   return (
     <svg

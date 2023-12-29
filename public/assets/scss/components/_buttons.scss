@@ -253,7 +253,8 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--tp-common-white);
-  background: var(--tp-theme-secondary);
+  background: var(--tp-common-black);
+  width: max-content;
   height: 70px;
   line-height: 70px;
   text-align: center;
@@ -271,7 +272,7 @@
     padding-left: 17px;
   }
   &:hover {
-    color: var(--tp-common-white);
+    color: var(--tp-theme-primary);
     & i {
       animation: tfLeftToRight 0.5s forwards;
     }

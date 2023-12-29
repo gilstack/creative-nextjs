@@ -303,7 +303,7 @@
   }
 
   & img {
-    transform: translateX(45px);
+    /* transform: translateX(45px); */
 
     @media #{$xxl} {
       transform: translateX(-70px);

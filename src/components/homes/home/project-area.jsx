@@ -1,25 +1,26 @@
-import Link from 'next/link';
-import React from 'react';
-import { portfolio_data } from '../../../data';
+import Link from "next/link";
+import React from "react";
+import { portfolio_data } from "../../../data";
 
 const ProjectArea = () => {
-  const [category, setCategory] = React.useState('Website Design');
-  const items = portfolio_data.filter(p => p.home);
-  const [portfolioItems, setPortfolioItems] = React.useState(items.filter(i => i.category === category));
-  const categories = [...new Set(items.map(p => p.category))];
+  const [category, setCategory] = React.useState("Website Design");
+  const items = portfolio_data.filter((p) => p.home);
+  const [portfolioItems, setPortfolioItems] = React.useState(
+    items.filter((i) => i.category === category)
+  );
+  const categories = [...new Set(items.map((p) => p.category))];
 
   const handleCategory = (c) => {
-    setCategory(c)
-    const new_items = items.filter(i => i.category === c);
-    setPortfolioItems(new_items)
-  }
+    setCategory(c);
+    const new_items = items.filter((i) => i.category === c);
+    setPortfolioItems(new_items);
+  };
 
-  const bigItems = portfolioItems.filter(i => i.big);
-  const sm_items = portfolioItems.filter(i => i.sm);
-
+  const bigItems = portfolioItems.filter((i) => i.big);
+  const sm_items = portfolioItems.filter((i) => i.sm);
 
   return (
-    <div className="tp-project-area p-relative pt-130 pb-100">
+    <div className="tp-project-area p-relative pt-100 pb-100">
       <div className="tp-project-shape">
         <img src="assets/img/project/project-shape.png" alt="" />
       </div>
@@ -27,19 +28,29 @@ const ProjectArea = () => {
         <div className="row align-items-center mb-15">
           <div className="col-xl-5 col-lg-12 col-md-12">
             <div className="tp-project-section-box">
-              <h5 className="tp-subtitle">Our Project</h5>
-              <h2 className="tp-title">Creative work. </h2>
+              <h5 className="tp-subtitle">Nossos Projetos</h5>
+              <h2 className="tp-title">Portfólio. </h2>
             </div>
           </div>
           <div className="col-xl-7 col-lg-12 col-md-12">
             <div className="tp-service-tab-button">
               <nav>
-                <div className="nav tp-service-tab justify-content-xl-end justify-content-lg-center" id="nav-tab"
-                  role="tablist">
+                <div
+                  className="nav tp-service-tab justify-content-xl-end justify-content-lg-center"
+                  id="nav-tab"
+                  role="tablist"
+                >
                   {categories.map((c, i) => (
-                    <button onClick={() => handleCategory(c)} key={i}
-                      className={`nav-links ${c === category ? 'active' : ''} mb-10`}
-                      type="button">{c}</button>
+                    <button
+                      onClick={() => handleCategory(c)}
+                      key={i}
+                      className={`nav-links ${
+                        c === category ? "active" : ""
+                      } mb-10`}
+                      type="button"
+                    >
+                      {c}
+                    </button>
                   ))}
                 </div>
               </nav>
@@ -61,9 +72,14 @@ const ProjectArea = () => {
                         <a>Banking App Management</a>
                       </Link>
                     </h2>
-                    <p>At Collax we specialize in designing, building, shipping...</p>
+                    <p>
+                      At Collax we specialize in designing, building,
+                      shipping...
+                    </p>
                     <Link href={`/portfolio-details/${item.id}`}>
-                      <a className="tp-btn-sm">View Case Studies <i className="far fa-arrow-right"></i></a>
+                      <a className="tp-btn-sm">
+                        View Case Studies <i className="far fa-arrow-right"></i>
+                      </a>
                     </Link>
                   </div>
                 </div>
@@ -71,7 +87,7 @@ const ProjectArea = () => {
             ))}
             <div className="col-xl-6 col-lg-12">
               <div className="row">
-                {sm_items.map(item => (
+                {sm_items.map((item) => (
                   <div key={item.id} className=" col-xl-12 col-lg-12">
                     <div className="tp-project-box-sm d-flex align-items-center mb-20">
                       <div className="tp-project-sm-img fix ml-25 mr-35">
@@ -85,8 +101,10 @@ const ProjectArea = () => {
                         </h3>
                         <p>{item.sm_text}</p>
                         <Link href={`/portfolio-details/${item.id}`}>
-                          <a className="tp-btn-white-sm">Case Studies 
-                          <i className="far fa-arrow-right"></i></a>
+                          <a className="tp-btn-white-sm">
+                            Case Studies
+                            <i className="far fa-arrow-right"></i>
+                          </a>
                         </Link>
                       </div>
                     </div>

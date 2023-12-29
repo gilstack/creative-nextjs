@@ -13,7 +13,7 @@ const Header = () => {
       <header className="d-none d-lg-block">
         <div
           id="header-sticky"
-          className={`tp-header-area header-transparent pl-165 pr-165 pt-20 
+          className={`tp-header-area header-transparent pl-165 pr-165 pt-40 
         ${headerSticky ? "header-sticky" : ""}`}
         >
           <div className="container-fluid">
@@ -27,7 +27,7 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-7 d-flex justify-content-center">
+              <div className="col-xl-8 col-lg-8 d-flex justify-content-center">
                 <div className="tp-main-menu">
                   <nav id="mobile-menu">
                     {/* nav menus start */}
@@ -36,11 +36,11 @@ const Header = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-xxl-3 col-xl-3 col-lg-3">
+              <div className="col-xxl-2 col-xl-2 col-lg-2">
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
                   <div className="tp-header-yellow-button tp-yellow-space">
                     <Link href="/contact">
-                      <a className="tp-btn-black">Duvidas ? 👋</a>
+                      <a className="tp-btn-black">Duvidas? 👋</a>
                     </Link>
                   </div>
                 </div>

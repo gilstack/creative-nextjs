@@ -23,7 +23,7 @@ const hero_contents = {
     </>
   ),
   btn_text: "Nossos Serviços",
-  btn_text_2: "Sobre Nós",
+  btn_text_2: "Saiba Mais",
   social_links: [
     {
       id: 1,
@@ -50,7 +50,7 @@ const hero_contents = {
       link: "https://www.behance.net/",
     },
   ],
-  hero_img: "/assets/img/hero/hero-5.png",
+  hero_img: "/assets/img/hero/hero-1-ai.png",
 };
 
 const { title, text, btn_text, btn_text_2, social_links, hero_img } =
@@ -63,7 +63,7 @@ const HeroArea = () => {
         <div className="shape-circle-yellow d-none"></div>
         <div className="shape-circle-blue d-none"></div>
         <div className="shape-one">
-          <img src="/assets/img/hero/shape-1.png" alt="" />
+          <img src="/assets/img/hero/shape-0.png" alt="" />
         </div>
       </div>
       <div className="tp-hero-wapper">
