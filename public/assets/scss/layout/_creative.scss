@@ -285,3 +285,9 @@
     max-width: 100%;
   }
 }
+
+/* Custom Creative */
+.cs-border-color {
+  border-top: solid 4px linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+  animation: animate 1.2s linear infinite;
+}
