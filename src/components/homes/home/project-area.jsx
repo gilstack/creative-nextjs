@@ -78,7 +78,7 @@ const ProjectArea = () => {
                     </p>
                     <Link href={`/portfolio-details/${item.id}`}>
                       <a className="tp-btn-sm">
-                        View Case Studies <i className="far fa-arrow-right"></i>
+                        ver projeto <i className="far fa-arrow-right"></i>
                       </a>
                     </Link>
                   </div>
@@ -102,7 +102,7 @@ const ProjectArea = () => {
                         <p>{item.sm_text}</p>
                         <Link href={`/portfolio-details/${item.id}`}>
                           <a className="tp-btn-white-sm">
-                            Case Studies
+                            ver projeto
                             <i className="far fa-arrow-right"></i>
                           </a>
                         </Link>

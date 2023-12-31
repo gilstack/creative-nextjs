@@ -3,7 +3,7 @@ import React from "react";
 import { services_data } from "../../../data";
 import { HighlightTwo } from "../../../svg";
 
-const services_items = services_data.filter((ser) => ser.home_4);
+const services_items = services_data.filter((ser) => ser.home);
 
 const ServicesArea = () => {
   return (
@@ -36,12 +36,14 @@ const ServicesArea = () => {
               >
                 <div className={`tp-sv-border-effect ${border_effect}`}>
                   <div
-                    className={`tp-service-item-four sv-color-${i + 1} mb-30`}
+                    className={`tp-service-item-four d-flex align-items-center sv-color-${
+                      i + 1
+                    } mb-30`}
                   >
-                    <div className="tp-service-item-four__img  mb-40">
+                    <div className="tp-service-item-four__img mr-20">
                       <img src={img} alt="" />
                     </div>
-                    <div className="tp-service-item-four__title">
+                    <div className="tp-service-item-four__title ">
                       <h3 className="tp-sv-sm-title">
                         <Link href={`/service-details/${id}`}>
                           <a>{title}</a>
@@ -54,6 +56,7 @@ const ServicesArea = () => {
             );
           })}
 
+          {/*
           <div
             className="col-xl-3 col-lg-4 col-md-6  wow tpfadeUp"
             data-wow-duration="1.1s"
@@ -62,7 +65,7 @@ const ServicesArea = () => {
             <div className="sv-color-eight  mb-30">
               <div className="sv-color-eight__title text-center">
                 <h3 className="tp-sv-sm-title">
-                  <a href="#">More Services</a>
+                  <a href="#">TODOS OS SERVIÇOS</a>
                 </h3>
                 <Link href={`/service-1`}>
                   <a>
@@ -72,6 +75,7 @@ const ServicesArea = () => {
               </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     </div>
