@@ -3,7 +3,7 @@ import React from "react";
 import { portfolio_data } from "../../../data";
 
 const ProjectArea = () => {
-  const [category, setCategory] = React.useState("Website Design");
+  const [category, setCategory] = React.useState("Desenvolvimento Web");
   const items = portfolio_data.filter((p) => p.home);
   const [portfolioItems, setPortfolioItems] = React.useState(
     items.filter((i) => i.category === category)
@@ -69,12 +69,12 @@ const ProjectArea = () => {
                   <div className="tp-project-content ml-20">
                     <h2 className="pro-lg-title">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        <a>Banking App Management</a>
+                        <a>Website Hichman</a>
                       </Link>
                     </h2>
                     <p>
-                      At Collax we specialize in designing, building,
-                      shipping...
+                      A Trendor é especializada em design, desenvolvimento e
+                      entrega de sites, portais e blogs...
                     </p>
                     <Link href={`/portfolio-details/${item.id}`}>
                       <a className="tp-btn-sm">
