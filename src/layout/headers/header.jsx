@@ -40,7 +40,7 @@ const Header = () => {
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
                   <div className="tp-header-yellow-button tp-yellow-space">
                     <Link href="/contact">
-                      <a className="tp-btn-black">Duvidas? 👋</a>
+                      <a className="tp-btn-contact-outline">Orçamento? 👋</a>
                     </Link>
                   </div>
                 </div>

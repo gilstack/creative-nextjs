@@ -4,7 +4,7 @@ import menu_data from "./menu-data";
 
 const NavMenus = () => {
   return (
-    <ul>
+    <ul className="p-0">
       {menu_data.map((menu, i) => (
         <li
           key={i}

@@ -31,11 +31,7 @@ const footer_contents = {
   copy_right_text: (
     <>©{new Date().getFullYear()} Trendor - Todos os direitos reservados.</>
   ),
-  conditions: [
-    "Termos e Condições",
-    "Política de Privacidade",
-    "Login / Cadastro",
-  ],
+  conditions: ["Termos e Condições", "Política de Privacidade"],
 };
 
 const {
@@ -52,7 +48,7 @@ const FooterThree = ({ home_four = false }) => {
   return (
     <React.Fragment>
       <footer>
-        <div className="tp-footer-area black-bg pt-130 pb-30">
+        <div className="tp-footer-area black-bg pt-100 pb-20">
           <div className="container">
             <div
               className="row wow tpfadeUp"

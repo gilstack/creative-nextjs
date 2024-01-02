@@ -8,7 +8,7 @@
   & ul {
     & li {
       display: inline-block;
-      margin-right: 60px;
+      margin: 0 26px;
       position: relative;
       @media #{$xxl} {
         margin-right: 36px;
@@ -24,7 +24,7 @@
       & a {
         font-size: 18px;
         font-weight: 500;
-        color: #8a90a2;
+        color: #292930;
         text-transform: capitalize;
         position: relative;
         padding: 37px 0;

@@ -10,7 +10,7 @@ const menu_data = [
     id: 2,
     mega_menu: false,
     has_dropdown: true,
-    title: "Sobre",
+    title: "A Trendor",
     link: "#",
     sub_menus: [
       { link: "/about", title: "A Agência" },
@@ -26,17 +26,17 @@ const menu_data = [
     link: "/service-1",
     sub_menus: [
       { link: "#", title: "Identidade Visual" },
-      { link: "#", title: "E-mail Marketing" },
       { link: "#", title: "Gestão de Mídias" },
       { link: "#", title: "Gestão de Tráfego" },
       { link: "#", title: "Inbound Marketing" },
+      { link: "#", title: "E-mail Marketing" },
     ],
   },
   {
     id: 3,
     mega_menu: false,
     has_dropdown: true,
-    title: "Web",
+    title: "Desenvolvimento",
     link: "/service-1",
     sub_menus: [
       { link: "#", title: "Criação de Sites" },

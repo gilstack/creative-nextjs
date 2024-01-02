@@ -106,7 +106,7 @@ const services_data = [
     img: "/assets/img/service/service4.2.png",
     title: (
       <>
-        Automações de <br /> Atendimento
+        Landing Pages <br /> de campanha
       </>
     ),
     border_effect: "sv-border-effect-2",
