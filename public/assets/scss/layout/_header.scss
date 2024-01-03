@@ -4,6 +4,10 @@
 
 @use "../utils" as *;
 
+.cs-bg-body {
+  background-color: #f3f6fd;
+}
+
 .tp-main-menu {
   & ul {
     & li {

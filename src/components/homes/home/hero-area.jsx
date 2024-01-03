@@ -50,7 +50,7 @@ const hero_contents = {
       link: "https://www.behance.net/",
     },
   ],
-  hero_img: "/assets/img/hero/hero-1-ai.png",
+  hero_img: "/assets/img/hero/hero-test.png",
 };
 
 const { title, text, btn_text, btn_text_2, social_links, hero_img } =
@@ -58,7 +58,7 @@ const { title, text, btn_text, btn_text_2, social_links, hero_img } =
 
 const HeroArea = () => {
   return (
-    <div className="tp-hero-area tp-hero-space p-relative z-index-1 fix">
+    <div className="tp-hero-area tp-hero-space p-relative z-index-1 cs-bg-body fix">
       <div className="tp-hero-shape">
         <div className="shape-circle-yellow d-none"></div>
         <div className="shape-circle-blue d-none"></div>
