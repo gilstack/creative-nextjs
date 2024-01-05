@@ -39,10 +39,11 @@ const menu_data = [
     title: "Desenvolvimento",
     link: "/service-1",
     sub_menus: [
+      { link: "#", title: "Otimização (SEO)" },
       { link: "#", title: "Criação de Sites" },
       { link: "#", title: "Lojas Online" },
       { link: "#", title: "Landing Pages" },
-      { link: "#", title: "SEO" },
+      { link: "#", title: "Automações" },
     ],
   },
   {
