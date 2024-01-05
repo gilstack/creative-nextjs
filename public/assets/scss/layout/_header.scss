@@ -95,13 +95,15 @@
           opacity: 1;
           visibility: visible;
           top: 100%;
+          border-radius: 12px;
+          box-shadow: 0px 0px 0px #ebebeb;
         }
       }
 
       & ul.submenu {
         position: absolute;
-        background-color: var(--tp-common-black);
-        padding: 40px;
+        background-color: var(--tp-common-white);
+        padding: 32px;
         width: 270px;
         transition: 0.3s;
         top: 110%;
@@ -120,7 +122,7 @@
           & a {
             font-size: 18px;
             font-weight: 500;
-            color: var(--tp-common-white);
+            color: var(--tp-common-black);
             display: block;
             padding: 0;
 
@@ -130,7 +132,7 @@
             }
 
             &:hover {
-              color: var(--tp-theme-primary);
+              color: var(--tp-theme-1);
             }
           }
         }

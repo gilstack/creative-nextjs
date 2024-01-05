@@ -359,10 +359,20 @@
 }
 
 .social-icon-4 {
-  color: #1da1f2;
+  color: #cc2366;
 
   &:hover {
-    color: #1da1f2;
+    color: #dc2743;
+  }
+}
+
+.social-icon-5 {
+  color: green;
+  @media #{$xs} {
+    margin-bottom: 20px;
+  }
+  &:hover {
+    color: green;
   }
 }
 
