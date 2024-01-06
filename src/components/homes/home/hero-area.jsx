@@ -81,7 +81,7 @@ const HeroArea = () => {
                     {text}
                   </p>
                   <div
-                    className="tp-hero-button mb-120 wow tpfadeUp"
+                    className="tp-hero-button mb-100 wow tpfadeUp"
                     data-wow-duration=".7s"
                     data-wow-delay="1s"
                   >
